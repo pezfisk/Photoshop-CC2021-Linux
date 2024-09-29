@@ -23,7 +23,6 @@ rm winetricks
 echo "25" > progress.mimifile
 
 # Adobe Photoshop 2021
-curl -L "https://lulucloud.mywire.org/FileHosting/GithubProjects/AdobePhotoshop2021.tar.xz" > AdobePhotoshop2021.tar.xz
 echo "50" > progress.mimifile
 tar -xf AdobePhotoshop2021.tar.xz
 rm AdobePhotoshop2021.tar.xz

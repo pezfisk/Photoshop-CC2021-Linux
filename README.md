@@ -1,24 +1,24 @@
-# Photoshop-CC2022-Linux
+# Photoshop-CC2021-Linux
 
 ## Important
 
+### You have to provide your own AdobePhotoshop2021.tar.xz file!
+
+- Put AdobePhotoshop2021.tar.xz in the same directory as this script
+
 #### PLEASE WHEN OPENING AN ISSUE FILL THE TEMPLATE OR GIVE ENOUGHT INFORMATION !!! "It doesn't work" ISN'T ENOUGH **
 
-**Please note that the GUI version might not work on your distribution. it worked with some older packager and has broken since. if you used the GUI and it hasn't worked, please try to use the CLI installer with a sh file in the RELEASE section. (avoid cloning as master branche can have experimental changes)**
+This git repo contains an installer for photoshop CC 2021 on linux with wine.
 
-**DISCLAIMER:**
-**Please use this software only if you have an active Photoshop subscription. I'm not responsable of any use without subscription.**
+#### Credits:
+- [LinSoftWin](https://github.com/LinSoftWin/Photoshop-CC2022-Linux): For making the original install script
+- [cheeeeer](https://github.com/cheeeeer/Photoshop-CC2022-Linux): For cleaning up the installer
 
-This git repo contains an installer for photoshop CC 2022 on linux with wine.
+| Version  | Rating | Problems |
+| ------------- | ------------- | ------------- |
+| [CC 2021](https://github.com/MiMillieuh/Photoshop-CC2022-Linux/releases/tag/2.1.3)  | Small visual errors  |  Canvas rendered outside the main one may flicker  |
 
-Note that Photoshop CC 2022 isn't as stable as the CC2021 version on linux. If you need a production environement, concidere using PS2021 instead
-
-If you use something from my repo in your project please credit me
-
-| Version  | Rating |
-| ------------- | ------------- |
-| [CC 2021](https://github.com/MiMillieuh/Photoshop-CC2022-Linux/releases/tag/2.1.3)  | Works almost like on Windows  |
-| [CC 2022](https://github.com/MiMillieuh/Photoshop-CC2022-Linux/releases/tag/2.1.1)  | Not ready for production... Basic functions works, No GPU acceleration  |
+Tested on Arch Linux (6.10.10-arch1-1) running Hyprland (v0.43.0)
 
 ![Screenshot from 2022-05-17 00-02-27](https://user-images.githubusercontent.com/52078885/168690419-274020b0-c993-4b86-a58f-f0f07237aa4f.png)
 
@@ -41,44 +41,17 @@ If you use something from my repo in your project please credit me
 
 **CLI:**
 
-`sh photoshop2022install.sh /path/to/your/install/folder`
+`sh photoshop2021install.sh /path/to/your/install/folder`
 
 **Camera Raw**
 You can install Camera Raw this way:
 
-`curl -L "https://download.adobe.com/pub/adobe/photoshop/cameraraw/win/12.x/CameraRaw_12_2_1.exe" > CameraRaw_12_2_1.exe`
-`WINEPREFIX=/Path/To/Your/Photoshop/Install/Adobe-Photoshop wine CameraRaw_12_2_1.exe`
+`sh photoshop2021install.sh /path/to/your/install/folder --camera-raw`
 
 To use camera raw you need to change a settings
 Edit -> preferences -> Camera raw... -> performance -> Use graphic processor: Off
 
 If camera raw is sometimes grayed out, just go to: Edit -> preferences -> Tools, and uncheck show Tooltips.
-
-
-
-**GUI:**
-
-**THIS METHODE IS DEPRECATED PLEASE USE CLI**
-
-Open photoshop installer:
-
-![Screenshot from 2022-05-17 00-14-15](https://user-images.githubusercontent.com/52078885/168692144-a1819955-c541-4248-bca2-ef4ed248e4bf.png)
-
-Click on install and chose the install folder (You must have acces to it):
-
-![Screenshot from 2022-05-17 00-14-56](https://user-images.githubusercontent.com/52078885/168692184-62e2c937-fa4b-43e8-ab8a-449015b42994.png)
-
-Wait for the install (It can take a long time depending on your internet and computer speed):
-
-![Screenshot from 2022-05-17 00-17-28](https://user-images.githubusercontent.com/52078885/168692197-c861e67a-01e0-436d-8169-6d23a0aa4edb.png)
-
-Once it's done you can close the window:
-
-![Screenshot from 2022-05-17 00-20-39](https://user-images.githubusercontent.com/52078885/168692210-7093c10d-310d-45f4-98fb-0d8eb25609f5.png)
-
-Then you can launch Photoshop:
-
-![Screenshot from 2022-05-17 00-21-04](https://user-images.githubusercontent.com/52078885/168692218-dd1dd912-83a8-4746-aafa-da7f0a9673c3.png)
 
 **Uninstalling:**
 
@@ -90,18 +63,3 @@ To uninstall remove the photoshop desktop file in *~/.local/share/applications/*
 - Gictorbit: For initial inspiration
 - HansKristian-Work: For making VKD3D-Proton
 - Adobe: For making Photoshop (also please release an official version for linux...)
-
-
-
-
-## Donate
-
-This isn't necessary but it helps paying the hosting server
-
-
-
-BTC: 1LDKrdTKGHtGRjDSL2ULxGGzX4onL5YUsp
-
-ETH: 0x57bf06a94ead7b18beb237e9aec9ae3ef06fe29a
-
-BUSD: 0x57bf06a94ead7b18beb237e9aec9ae3ef06fe29a
