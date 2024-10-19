@@ -16,7 +16,7 @@ This git repo contains an installer for photoshop CC 2021 on linux with wine.
 
 | Version  | Rating | Problems |
 | ------------- | ------------- | ------------- |
-| [CC 2021](https://github.com/MiMillieuh/Photoshop-CC2022-Linux/releases/tag/2.1.3)  | Small visual errors  |  Canvas rendered outside the main one may flicker  |
+| [CC 2021](https://github.com/MiMillieuh/Photoshop-CC2022-Linux/releases/tag/2.1.3)  | Small visual errors  |  Canvas rendered outside the main one may flicker, Copy/Pasting doesn't work under Wayland  |
 
 Tested on Arch Linux (6.10.10-arch1-1) running Hyprland (v0.43.0)
 
